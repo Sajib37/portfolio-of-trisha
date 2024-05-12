@@ -11,9 +11,9 @@ const About = () => {
             </div>
 
             <div className="flex lg:gap-24 gap-12 flex-col lg:flex-row">
-                <div className="wrapper">
-                    <div className="box p-14 bg-[#9b59b6] w-80 md:w-96  flex items-center justify-center">
-                        <img className="w-full" src={profile} alt="" />
+                <div className="wrapper rounded-full w-4/5 mx-auto lg:w-full ">
+                    <div className="box rounded-full  p-2 bg-[#9b59b6] w-full  flex items-center justify-center">
+                        <img className="w-full rounded-full" src={profile} alt="" />
                     </div>
                 </div>
 

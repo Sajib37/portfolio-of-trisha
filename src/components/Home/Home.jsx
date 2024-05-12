@@ -78,8 +78,8 @@ const Home = () => {
                 </button>
             </div>
 
-            <div className="  lg:absolute lg:right-0 lg:bottom-0 w-4/5 md:w-3/5 lg:w-6/12 ">
-                <img className="w-full" src={image} alt="" />
+            <div className="  lg:absolute lg:right-0 lg:bottom-0 w-4/5 md:w-3/5 lg:w-5/12 ">
+                <img className="w-full l" src={image} alt="" />
             </div>
         </section>
     );
