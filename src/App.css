@@ -1,0 +1,104 @@
+/* social icons styles */
+.social-icon{
+  padding: 4px;
+  border: 2px solid #9b59b6;
+  color: #9b59b6;
+  
+  
+}
+.social-icon:hover{
+  color: white;
+  background-color: #9b59b6;
+  box-shadow: 1px 1px 5px 2px #9b59b6;
+}
+
+/* profile image background design and animation*/
+.wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box{
+  background-color: #9b59b6;
+  box-shadow: 0 2px 20px 2px #9b59b6;
+  animation: animate 6s ease-in-out infinite;
+  transition: all 1s ease-in-out;
+  padding: 330px;
+}
+
+/* Animation */
+
+
+.topMove{
+  animation: slideTop 1s ease forwards;
+  opacity: 0;
+}
+
+/* Trisha logo in large device in navbar */
+.rightMove{
+  animation: slideRight 1s ease forwards;
+}
+/* JMT logo in small device in right side */
+.leftMove{
+  animation: slideLeft 1s ease forwards;
+}
+.downMove{
+  animation: slideDown 1s ease forwards;
+  opacity: 0;
+}
+
+/* keyFranes */
+@keyframes animate{
+  0%{
+      border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50%{
+      border-radius: 30% 60% 70% 40%/50% 60% 30% 70%;
+  }
+  100%{
+      border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;;
+  }
+}
+
+@keyframes slideTop{
+  0%{
+      transform: translateY(80px);
+      opacity: 0;
+      
+  }
+  100%{
+      transform: translateY(0px);
+      opacity: 1;
+  }
+}
+@keyframes slideRight{
+  0%{
+      transform: translateX(-120px);
+      opacity: 0;
+  }
+  100%{
+      transform: translateX(0px);
+      opacity: 1;
+  }
+}
+@keyframes slideLeft{
+  0%{
+      transform: translateX(120px);
+      opacity: 0;
+  }
+  100%{
+      transform: translateX(0px);
+      opacity: 1;
+  }
+}
+@keyframes slideDown{
+  0%{
+      transform: translateY(-120px);
+      opacity: 0;
+      
+  }
+  100%{
+      transform: translateY(0px);
+      opacity: 1;
+  }
+}
