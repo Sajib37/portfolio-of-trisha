@@ -13,8 +13,8 @@ const Contact = () => {
         e.preventDefault();
 
         emailjs
-            .sendForm("service_sdrqkey", "template_32jirof", form.current, {
-                publicKey: "NyFYJGObUaA1UQvOZ",
+            .sendForm("service_10txzmf", "template_6oblqs5", form.current, {
+                publicKey: "00hRLZ65v0E2_pZqd",
             })
             .then(
                 () => {
@@ -68,7 +68,8 @@ const Contact = () => {
                         <div>
                             <p className="font-bold text-lg">Email:</p>
                             <p className="font-bold text-gray-400">
-                                jnucsetrisha99@gmail.com
+                            jnucsetrisha99@gmail.com
+
                             </p>
                         </div>
                     </div>
@@ -100,26 +101,29 @@ const Contact = () => {
                     >
                         <label className="font-semibold">Name</label>
                         <input
-                            className="p-2 mb-2 rounded-lg"
+                            className="p-2 mb-2 rounded-lg bg-bg1 text-white"
                             placeholder="Enter your name"
                             type="text"
+                            required
                             name="from_name"
                         />
                         <label className="font-semibold">Email</label>
                         <input
-                            className="p-2 mb-2 rounded-lg"
+                            className="p-2 mb-2 rounded-lg bg-bg1 text-white"
                             placeholder="Enter your Email"
                             type="email"
+                            required
                             name="from_email"
                         />
                         <label className="font-semibold">Message</label>
                         <textarea
-                            className="p-2 text-black mb-2 rounded-lg"
+                            className="p-2  mb-2 rounded-lg bg-bg1 text-white"
                             placeholder="Write your message here"
+                            required
                             name="message"
                         />
                         <input
-                            className="bg-[#9b59b6] rounded-full p-2 mt-4 text-black border-2 w-32 md:w-36 mx-auto border-purple-500"
+                            className="bg-[#9b59b6] cursor-pointer rounded-full p-2 mt-4 text-black border-2 w-32 md:w-36 mx-auto border-purple-500"
                             type="submit"
                             value="Send"
                         />

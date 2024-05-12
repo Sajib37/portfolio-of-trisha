@@ -5,7 +5,7 @@ const Experience = () => {
     return (
         <section>
             <h1 className="text-xl md:text-3xl mb-4 font-bold">Experience :</h1>
-            <ol className="relative border-s border-gray-200 dark:border-gray-700 mx-auto max-w-xs md:max-w-2xl">
+            <ol className="relative border-s border-purple-600 dark:border-gray-700 mx-auto max-w-xs md:max-w-2xl">
                 <li className="mb-10 container relative ms-4">
                     <div className="absolute w-3 h-3 bg-purple-600 rounded-full top-1 -left-[23px] border border-purple-600 "></div>
                     <div className="leftEffect"></div>

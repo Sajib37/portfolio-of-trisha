@@ -7,8 +7,8 @@ export default {
   theme: {
     extend: {
       backgroundColor: {
-        bg1: "#1B262C",
-        bg2: "#0F4C75"
+        bg1: "#0A2647",
+        bg2: "#144272"
       },
       fontFamily: {
         poppins: "Poppins",

@@ -19,7 +19,7 @@ const Home = () => {
                     Hello, It's me !
                 </h1>
                 <h1 className="leftMove mb-28 lg:text-4xl md:text-3xl text-2xl text-white font-serif font-extrabold">
-                    Jannatul Mawya Trisha
+                    Jannatul Mawya
                 </h1>
                 <span className=" text-white  font-bold font-playfair text-xl md:text-2xl ">
                     I'm a
@@ -39,11 +39,9 @@ const Home = () => {
                 </span>
 
                 <p className="max-w-3xl text-base rightMove">
-                    I'm a versatile professional skilled in Machine Learning,
-                    Data Science, and Project Management. With a passion for
-                    turning data into actionable insights, I specialize in
-                    developing intelligent systems and leading projects to
-                    success.
+                    I am a Data Science enthusiast.A versatile professional in
+                    Machine learning,Data science alongside with Project
+                    management,Critical thinking and leadership.
                 </p>
 
                 <div className=" flex gap-4 topMove ">
@@ -57,24 +55,20 @@ const Home = () => {
                     <a
                         target="_blank"
                         className="social-icon rounded-full p-2 cursor-pointer"
-                        href="#"
+                        href="https://github.com/JannatTrisha"
                     >
                         <FaGithub className="md:text-2xl text-xl " />
                     </a>
                     <a
                         target="_blank"
                         className="social-icon rounded-full p-2 cursor-pointer"
-                        href="#"
+                        href="https://www.facebook.com/jannat.trisha.543?mibextid=ZbWKwL"
                     >
                         <FaFacebook className="md:text-2xl text-xl " />
                     </a>
                 </div>
-                <button
-                    className="p-2 md:px-3 topMove rounded-full bg-purple-600 text-white shadow-lg hover:shadow-purple-800  font-semibold "
-                    
-                >
+                <button className="p-2 md:px-3 topMove rounded-full bg-purple-600 text-white shadow-lg hover:shadow-purple-800  font-semibold ">
                     <a
-                        
                         className="flex items-center gap-1"
                         href="resume.pdf"
                         download
@@ -84,8 +78,8 @@ const Home = () => {
                 </button>
             </div>
 
-            <div className="  lg:absolute lg:right-0 lg:bottom-0 w-4/5 md:w-3/5 lg:w-2/5 ">
-                <img className='w-full' src={image} alt="" />
+            <div className="  lg:absolute lg:right-0 lg:bottom-0 w-4/5 md:w-3/5 lg:w-6/12 ">
+                <img className="w-full" src={image} alt="" />
             </div>
         </section>
     );

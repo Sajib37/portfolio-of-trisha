@@ -1,8 +1,8 @@
 import React from "react";
 import bookStore from "./../../assets/projects/bookStore.png";
 import campusCommune from "../../assets/projects/campus-commune.png";
-import counseling from "../../assets/projects/counceling.jpg";
-import counter from "../../assets/projects/counter.png";
+import counseling from "../../assets/projects/counceling.png";
+import library from "../../assets/projects/library.png";
 
 const Projects = () => {
     return (
@@ -85,27 +85,27 @@ const Projects = () => {
                     </div>
                 </div>
 
-                {/* Counter App */}
+                {/* Library management App */}
                 <div
                     className="space-y-2  rounded-xl"
                     style={{ boxShadow: "0px 0px 10px 0px #9b59b6" }}
                 >
                     <img
                         className="rounded-t-xl w-full max-h-80"
-                        src={counter}
+                        src={library}
                         alt=""
                     />
                     <div className="p-2">
                         <h1 className="text-lg text-purple-600 font-bold">
-                            Coounter App
+                            Library Management System
                         </h1>
                         <p className="text-justify">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing
-                            elit. Totam magni suscipit quas perferendis, eum
-                            consequuntur laboriosam incidunt voluptatum ratione
-                            magnam. Enim ab eaque illum ad quis recusandae velit
-                            et quod, expedita ratione distinctio error aliquid
-                            provident odit explicabo! A, neque!
+                            E-Library is a comprehensive library management
+                            software facilitating member access to book
+                            browsing, details, and borrowing. Librarians oversee
+                            critical modules including member maintenance, book
+                            management, and transaction tracking, streamlining
+                            traditional library operations effectively.
                         </p>
                     </div>
                 </div>

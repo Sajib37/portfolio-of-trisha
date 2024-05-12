@@ -56,7 +56,7 @@ const App = () => {
 
             <section
                 id="about"
-                className="min-h-screen font-poppins pt-10 md:pt-14 bg-bg2"
+                className=" font-poppins pt-10 md:pt-14 bg-bg2"
             >
                 <About></About>
             </section>
