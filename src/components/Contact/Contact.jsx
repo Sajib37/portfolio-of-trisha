@@ -2,39 +2,38 @@ import React from "react";
 import { FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
 import { BsFillSendFill } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
-import  { useRef } from 'react';
-import emailjs from '@emailjs/browser';
-import Swal from 'sweetalert2'
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
+import Swal from "sweetalert2";
 
 const Contact = () => {
-
     const form = useRef();
 
     const sendEmail = (e) => {
         e.preventDefault();
 
         emailjs
-        .sendForm('service_sdrqkey', 'template_32jirof', form.current, {
-            publicKey: 'NyFYJGObUaA1UQvOZ',
-        })
-        .then(
-            () => {
-                Swal.fire({
-                    position: "top-end",
-                    icon: "success",
-                    title: "Your message has been send seuccessfully",
-                    showConfirmButton: false,
-                    timer: 1500
-                  });
-            },
-            (error) => {
-                Swal.fire({
-                    title: "OOPs! message did not send!",
-                    text: "Try again later..",
-                    icon: "question"
-                  });
-            },
-        );
+            .sendForm("service_sdrqkey", "template_32jirof", form.current, {
+                publicKey: "NyFYJGObUaA1UQvOZ",
+            })
+            .then(
+                () => {
+                    Swal.fire({
+                        position: "top-end",
+                        icon: "success",
+                        title: "Your message has been send seuccessfully",
+                        showConfirmButton: false,
+                        timer: 1500,
+                    });
+                },
+                (error) => {
+                    Swal.fire({
+                        title: "OOPs! message did not send!",
+                        text: "Try again later..",
+                        icon: "question",
+                    });
+                }
+            );
     };
 
     return (
@@ -58,7 +57,7 @@ const Contact = () => {
                         <div>
                             <p className="font-bold text-lg">Contact:</p>
                             <p className="font-bold text-gray-400">
-                                01903106521
+                                +880 1630647999
                             </p>
                         </div>
                     </div>
@@ -69,7 +68,7 @@ const Contact = () => {
                         <div>
                             <p className="font-bold text-lg">Email:</p>
                             <p className="font-bold text-gray-400">
-                                sajibhasan9811@gmail.com
+                                jnucsetrisha99@gmail.com
                             </p>
                         </div>
                     </div>
@@ -86,18 +85,44 @@ const Contact = () => {
                     </div>
                 </div>
 
-
                 {/* Form */}
-                <div className=" rounded-lg w-full mx-auto lg:w-1/2 py-4 px-2 md:px-4" style={{ boxShadow: "2px 2px 10px 2px #9b59b6" }}>
-                    <h1 className="font-bold text-2xl mb-4 text-center md:text-3xl">Contact Form</h1>
-                    <form className="flex flex-col" ref={form} onSubmit={sendEmail}>
+                <div
+                    className=" rounded-lg w-full mx-auto lg:w-1/2 py-4 px-2 md:px-4"
+                    style={{ boxShadow: "2px 2px 10px 2px #9b59b6" }}
+                >
+                    <h1 className="font-bold text-2xl mb-4 text-center md:text-3xl">
+                        Contact Form
+                    </h1>
+                    <form
+                        className="flex flex-col"
+                        ref={form}
+                        onSubmit={sendEmail}
+                    >
                         <label className="font-semibold">Name</label>
-                        <input className="p-2 mb-2 rounded-lg" placeholder="Enter your name" type="text" name="from_name" />
+                        <input
+                            className="p-2 mb-2 rounded-lg"
+                            placeholder="Enter your name"
+                            type="text"
+                            name="from_name"
+                        />
                         <label className="font-semibold">Email</label>
-                        <input className="p-2 mb-2 rounded-lg" placeholder="Enter your Email" type="email" name="from_email" />
+                        <input
+                            className="p-2 mb-2 rounded-lg"
+                            placeholder="Enter your Email"
+                            type="email"
+                            name="from_email"
+                        />
                         <label className="font-semibold">Message</label>
-                        <textarea className="p-2 text-black mb-2 rounded-lg" placeholder="Write your message here" name="message" />
-                        <input className="bg-[#9b59b6] rounded-full p-2 mt-4 text-black border-2 w-32 md:w-36 mx-auto border-purple-500" type="submit" value="Send" />
+                        <textarea
+                            className="p-2 text-black mb-2 rounded-lg"
+                            placeholder="Write your message here"
+                            name="message"
+                        />
+                        <input
+                            className="bg-[#9b59b6] rounded-full p-2 mt-4 text-black border-2 w-32 md:w-36 mx-auto border-purple-500"
+                            type="submit"
+                            value="Send"
+                        />
                     </form>
                 </div>
             </section>
