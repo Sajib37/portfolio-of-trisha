@@ -26,6 +26,22 @@
   padding: 330px;
 }
 
+/* Hover effect on experience timeline */
+
+.leftEffect{
+  height: 100%;
+  width: 0px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: #08283e;
+  border-radius: 10px;
+  transition: 0.8s;
+}
+.container:hover .leftEffect{
+  width: 100%;
+}
+
 /* Animation */
 
 
