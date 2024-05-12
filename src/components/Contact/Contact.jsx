@@ -4,6 +4,7 @@ import { BsFillSendFill } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 import  { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import Swal from 'sweetalert2'
 
 const Contact = () => {
 
@@ -18,10 +19,20 @@ const Contact = () => {
         })
         .then(
             () => {
-            console.log('SUCCESS!');
+                Swal.fire({
+                    position: "top-end",
+                    icon: "success",
+                    title: "Your message has been send seuccessfully",
+                    showConfirmButton: false,
+                    timer: 1500
+                  });
             },
             (error) => {
-            console.log('FAILED...', error.text);
+                Swal.fire({
+                    title: "OOPs! message did not send!",
+                    text: "Try again later..",
+                    icon: "question"
+                  });
             },
         );
     };
