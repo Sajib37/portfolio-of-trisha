@@ -36,7 +36,7 @@ const App = () => {
             </span>
             <span className="md:hidden fixed top-2 z-30 right-3">
                 <h1 className=" font-playfair font-extrabold text-transparent text-2xl bg-clip-text bg-gradient-to-r from-purple-600 to-orange-500">
-                    JMT
+                    JM
                 </h1>
             </span>
             <div

@@ -11,7 +11,7 @@ const Projects = () => {
                 My Projects
             </h1>
 
-            <section className="text-white px-2 md:px-10 lg:px-0 grid lg:grid-cols-2 gap-6  lg:gap-8">
+            <section className="text-white px-4 md:px-10 lg:px-0 grid lg:grid-cols-2 gap-8 md:gap-10 lg:gap-14">
                 {/* Campus Commune */}
                 <div
                     className="space-y-2  rounded-xl"
